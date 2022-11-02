@@ -1,14 +1,16 @@
 
 import { Route, Routes } from "react-router-dom";
-import { Login } from './pages';
+import { ApiKey, Login } from './pages';
 
 function App() {
   return (
     <div>
       <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/admin">
-          
+        <Route path="login" element={<Login />} />
+        <Route path="/">  
+          <Route path="admin">
+            <Route path="api-key" element={<ApiKey />} />
+          </Route>
         </Route>
       </Routes>
     </div>
