@@ -1,2 +1,2 @@
-export { default as ConfirmationLayout } from './auth/ConfirmationLayout';
-export { default as RequestLayout } from './auth/RequestLayout';
+export { default as AuthLayout } from './auth/AuthLayout';
+
