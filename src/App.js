@@ -1,6 +1,6 @@
 
 import { Route, Routes } from "react-router-dom";
-import { Account, ApiKey, Confirmation, ForgotPassword, Login, Registration, Tables } from './pages';
+import { Account, ApiKey, ChangePassword, Confirmation, ForgotPassword, Login, Registration, Tables } from './pages';
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="sign-up" element={<Registration />} />
         <Route path="forgot-password" element={<ForgotPassword /> } />
+        <Route path="change-password" element={<ChangePassword /> } />
         <Route path="confirmation" element={<Confirmation title="Change Password" message="Your password has been changed." /> } />
         <Route path="/">  
           <Route path="settings">
