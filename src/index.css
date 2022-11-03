@@ -4,12 +4,9 @@
 @tailwind utilities;
 
 @layer base {
-    /* h1 {
-      @apply text-2xl;
+    .shownLine{
+      @apply before:w-5 before:h-[3px] before:absolute before:left-1/2 before:top-1/2 before:-translate-y-1/2 before:-translate-x-1/2 before:rotate-45 before:z-10 before:bg-black;
     }
-    h2 {
-      @apply text-xl;
-    } */
     .progress-bar__progress{
         stroke-dasharray: 100 100;
         stroke-dashoffset: 0;
